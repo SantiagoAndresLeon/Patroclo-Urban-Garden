@@ -53,23 +53,18 @@
     </section>
 
 
-    <!-- BIENVENIDOS -->
+    <!-- QUIÉNES SOMOS -->
 
-    <section class="bienvenidos">
+    <section class="bienvenidos" id="quienes-somos">
 
         <div class="bienvenidos-content">
-            <h2>Bienvenidos a la huerta urbana de Patroclo</h2>
+            <h2>¿Quiénes Somos?</h2>
             <div class="divider"></div>
 
             <p>
-                La Huerta de Patroclo nace como una iniciativa del grupo de investigación
-                Agua y Energía de la Universidad Militar Nueva Granada, con el propósito
-                de fomentar la sostenibilidad ambiental, la inclusión social y la economía circular.
-            </p>
-
-            <p>
-                Este espacio promueve el aprendizaje ambiental, la agricultura urbana
-                y el trabajo colaborativo entre estudiantes e investigadores.
+                Somos un equipo dedicado a la investigación y el desarrollo de iniciativas sostenibles.
+                Buscamos transformar los espacios urbanos mediante la integración de la naturaleza,
+                promoviendo la agricultura urbana, la economía circular y la educación ambiental participativa.
             </p>
         </div>
 
@@ -77,20 +72,32 @@
 
 
 
-    <!-- OBJETIVO -->
+    <!-- INFORMACIÓN Y EXPERIENCIA VR -->
 
-    <section class="objetivo">
+    <section class="info-y-vr" id="experiencias"
+        style="display: flex; align-items: flex-start; justify-content: center; gap: 60px; padding: 80px 10%; background: white; flex-wrap: wrap;">
 
-        <div class="objetivo-texto">
+        <div class="info-texto" style="flex: 1; min-width: 300px; max-width: 500px; padding-top: 10px;">
 
-            <h2>Objetivo</h2>
+            <p style="font-size: 16px; color: #333; margin-bottom: 25px; text-transform: uppercase;">
+                INFORMACION DE LA HUERTA:
+            </p>
 
-            <p>
+            <p style="margin-bottom: 15px; color: #333; font-size: 16px; text-align: justify; line-height: 1.6;">
+                La Huerta de Patroclo nace como una iniciativa del grupo de investigación
+                Agua y Energía de la Universidad Militar Nueva Granada, con el propósito
+                de fomentar la sostenibilidad ambiental, la inclusión social y la economía circular.
+            </p>
 
-                Compartir la experiencia de nuestra huerta: presentar las especies
-                cultivadas, describir sus usos y mostrar cómo el trabajo colaborativo
-                puede fortalecer la relación entre la comunidad y la naturaleza.
+            <p style="margin-bottom: 15px; color: #333; font-size: 16px; text-align: justify; line-height: 1.6;">
+                Este espacio promueve el aprendizaje ambiental, la agricultura urbana
+                y el trabajo colaborativo entre estudiantes e investigadores.
+            </p>
 
+            <p style="margin-bottom: 30px; color: #333; font-size: 16px; text-align: justify; line-height: 1.6;">
+                Nuestro objetivo es compartir la experiencia de nuestra huerta: presentar las especies cultivadas,
+                describir sus usos y mostrar cómo el trabajo colaborativo puede fortalecer la relación entre la
+                comunidad y la naturaleza.
             </p>
 
             <a href="guardianes.html" class="boton">
@@ -99,10 +106,25 @@
 
         </div>
 
+        <div class="vr-container" style="display: flex; justify-content: center;">
 
-        <div class="objetivo-imagen">
-
-            <img src="img/huerta.jpg" alt="Huerta urbana">
+            <div class="experiencia-card destacado"
+                style="margin: 0; background: white; border: 1px solid #e0e0e0; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-radius: 12px; overflow: hidden; max-width: 340px;">
+                <img src="img/patroclo_vr.png" alt="Patroclo en Realidad Virtual" class="vr-img"
+                    style="width: 100%; border-bottom: none;">
+                <div class="card-content" style="padding: 25px 20px;">
+                    <h3 class="vr-title"
+                        style="font-size: 20px; color: #2e7d32; text-align: center; text-transform: uppercase; font-weight: bold; margin-bottom: 15px;">
+                        Huerta en Realidad Virtual</h3>
+                    <p style="text-align: center; color: #666; font-size: 15px; margin-bottom: 25px; line-height: 1.5;">
+                        ¡Adéntrate en el metaverso agrícola!<br>Explora, juega y aprende interactuando con nuestras
+                        plantas en un entorno asombroso.</p>
+                    <div style="text-align: center;">
+                        <a href="#juego" class="vr-btn"
+                            style="padding: 12px 25px; font-size: 15px; border-radius: 25px;">🎮 ¡ENTRAR AHORA!</a>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -110,24 +132,90 @@
 
 
 
-    <!-- EXPERIENCIAS VIRTUALES -->
+    <!-- AFILIACIONES -->
 
-    <section class="experiencias-section" id="experiencias">
+    <section id="afiliaciones" style="padding: 80px 10%; text-align: center; background: #f9fbfb;">
 
-        <h2>Experiencias virtuales</h2>
+        <style>
+            .afiliacion-card {
+                text-decoration: none;
+                color: inherit;
+                display: block;
+                width: 280px;
+                background: white;
+                border-radius: 12px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+                overflow: hidden;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
 
-        <div class="experiencias-container">
+            .afiliacion-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            }
 
-            <div class="experiencia-card destacado">
-                <img src="img/patroclo_vr.png" alt="Patroclo en Realidad Virtual" class="vr-img">
-                <div class="card-content">
-                    <h3 class="vr-title">Huerta en Realidad Virtual </h3>
-                    <p>¡Adéntrate en el metaverso agrícola! Explora, juega y aprende interactuando con nuestras plantas
-                        en un entorno asombroso.</p>
-                    <a href="#juego" class="vr-btn">🎮 ¡ENTRAR AHORA!</a>
+            .afiliacion-img-container {
+                height: 180px;
+                background: #eaeff2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                padding: 20px;
+                border-bottom: 1px solid #eee;
+            }
+
+            .afiliacion-img-container img {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                transition: transform 0.3s ease;
+            }
+
+            .afiliacion-card:hover .afiliacion-img-container img {
+                transform: scale(1.05);
+            }
+        </style>
+
+        <h2 style="color: #2f6f8f; font-size: 32px; margin-bottom: 50px;">Afiliaciones</h2>
+
+        <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+
+            <!-- Tarjeta 1 -->
+            <a href="#" target="_blank" class="afiliacion-card">
+                <div class="afiliacion-img-container">
+                    <img src="img/Logo.png" alt="Logo de Afiliado 1">
                 </div>
-            </div>
+                <div style="padding: 20px;">
+                    <h3 style="font-size: 20px; color: #2e7d32; margin-bottom: 10px;">Afiliado 1</h3>
+                    <p style="font-size: 15px; color: #555; margin-bottom: 0; line-height: 1.5;">Haz clic aquí para
+                        visitar la página de nuestra primera afiliación.</p>
+                </div>
+            </a>
 
+            <!-- Tarjeta 2 -->
+            <a href="#" target="_blank" class="afiliacion-card">
+                <div class="afiliacion-img-container">
+                    <img src="img/Logo.png" alt="Logo de Afiliado 2">
+                </div>
+                <div style="padding: 20px;">
+                    <h3 style="font-size: 20px; color: #2e7d32; margin-bottom: 10px;">Afiliado 2</h3>
+                    <p style="font-size: 15px; color: #555; margin-bottom: 0; line-height: 1.5;">Haz clic aquí para
+                        conocer más sobre nuestro segundo aliado.</p>
+                </div>
+            </a>
+
+            <!-- Tarjeta 3 -->
+            <a href="#" target="_blank" class="afiliacion-card">
+                <div class="afiliacion-img-container">
+                    <img src="img/Logo.png" alt="Logo de Afiliado 3">
+                </div>
+                <div style="padding: 20px;">
+                    <h3 style="font-size: 20px; color: #2e7d32; margin-bottom: 10px;">Afiliado 3</h3>
+                    <p style="font-size: 15px; color: #555; margin-bottom: 0; line-height: 1.5;">Descubre cómo
+                        colaboramos con nuestro tercer afiliado dando clic aquí.</p>
+                </div>
+            </a>
 
         </div>
 
