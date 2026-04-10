@@ -71,8 +71,147 @@
     </section>
 
 
+    <!-- GALERÍA SLIDER -->
+    <section id="galeria-slider"
+        style="padding: 0; background: #fafafa; overflow: hidden; white-space: nowrap; width: 100%; position: relative;">
+        <style>
+            .slider-wrapper {
+                width: 100%;
+                overflow: hidden;
+            }
 
-    <!-- INFORMACIÓN Y EXPERIENCIA VR -->
+            .slider-track {
+                display: inline-flex;
+                animation: scroll-left 120s linear infinite;
+                gap: 0;
+            }
+
+            .slider-track:hover {
+                animation-play-state: paused;
+            }
+
+            .slider-img {
+                width: 380px;
+                height: 280px;
+                object-fit: cover;
+                border-radius: 0;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                cursor: pointer;
+            }
+
+            .slider-img:hover {
+                transform: scale(1.02);
+                z-index: 10;
+                position: relative;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            }
+
+            @keyframes scroll-left {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+        </style>
+
+        <div class="slider-wrapper">
+            <div class="slider-track">
+                <!-- Originales -->
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.19%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.21%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.21%20PM%20(2).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.21%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.22%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.22%20PM%20(2).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.22%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.23%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.23%20PM%20(2).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.23%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.24%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.24%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.29%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.30%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.30%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.31%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.31%20PM%20(2).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.31%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.32%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.32%20PM%20(2).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.32%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+
+                <!-- Duplicados exactos para loop infinito perfecto -->
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.19%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.21%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.21%20PM%20(2).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.21%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.22%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.22%20PM%20(2).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.22%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.23%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.23%20PM%20(2).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.23%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.24%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.24%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.29%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.30%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.30%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.31%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.31%20PM%20(2).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.31%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.32%20PM%20(1).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.32%20PM%20(2).jpeg" alt="Foto galería"
+                    class="slider-img">
+                <img src="img/Galeria/WhatsApp%20Image%202026-04-10%20at%2012.20.32%20PM.jpeg" alt="Foto galería"
+                    class="slider-img">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- INFORMACIÓN -->
 
     <section class="info-y-vr" id="experiencias"
         style="display: flex; align-items: flex-start; justify-content: center; gap: 60px; padding: 80px 10%; background: white; flex-wrap: wrap;">
@@ -91,7 +230,7 @@
 
             <p style="margin-bottom: 15px; color: #333; font-size: 16px; text-align: justify; line-height: 1.6;">
                 Este espacio promueve el aprendizaje ambiental, la agricultura urbana
-                y el trabajo colaborativo entre estudiantes e investigadores.
+                y el trabajo colaborativo entre estudiantes, funcionarios e investigadores.
             </p>
 
             <p style="margin-bottom: 30px; color: #333; font-size: 16px; text-align: justify; line-height: 1.6;">
@@ -110,18 +249,19 @@
 
             <div class="experiencia-card destacado"
                 style="margin: 0; background: white; border: 1px solid #e0e0e0; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-radius: 12px; overflow: hidden; max-width: 340px;">
-                <img src="img/patroclo_vr.png" alt="Patroclo en Realidad Virtual" class="vr-img"
-                    style="width: 100%; border-bottom: none;">
+                <img src="img/Huerta.jpeg" alt="Catálogo de nuestra huerta" class="vr-img"
+                    style="width: 100%; height: 200px; object-fit: cover; border-bottom: none;">
                 <div class="card-content" style="padding: 25px 20px;">
                     <h3 class="vr-title"
                         style="font-size: 20px; color: #2e7d32; text-align: center; text-transform: uppercase; font-weight: bold; margin-bottom: 15px;">
-                        Huerta en Realidad Virtual</h3>
+                        Catálogo de nuestra huerta</h3>
                     <p style="text-align: center; color: #666; font-size: 15px; margin-bottom: 25px; line-height: 1.5;">
-                        ¡Adéntrate en el metaverso agrícola!<br>Explora, juega y aprende interactuando con nuestras
-                        plantas en un entorno asombroso.</p>
+                        Descubre la diversidad que cultivamos con dedicación.<br>Haz clic para conocer los diferentes
+                        tipos de plantas que sembramos aquí.</p>
                     <div style="text-align: center;">
-                        <a href="#juego" class="vr-btn"
-                            style="padding: 12px 25px; font-size: 15px; border-radius: 25px;">🎮 ¡ENTRAR AHORA!</a>
+                        <a href="especies.html" class="vr-btn"
+                            style="padding: 12px 25px; font-size: 15px; border-radius: 25px; text-decoration: none; display: inline-block; background-color: #2e7d32; color: white;">🌱
+                            VER CATÁLOGO</a>
                     </div>
                 </div>
             </div>
@@ -130,91 +270,107 @@
 
     </section>
 
+    <!-- NUESTRAS ACTIVIDADES -->
+    <section id="actividades" style="padding: 80px 10%; background: white;">
+        <style>
+            .actividad-card {
+                flex: 1;
+                min-width: 250px;
+                max-width: 320px;
+                text-align: center;
+                padding: 40px 30px;
+                background: #fdfdfd;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                border-radius: 12px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .actividad-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            .actividad-icon {
+                font-size: 48px;
+                margin-bottom: 20px;
+                display: inline-block;
+                transition: transform 0.3s ease;
+            }
+
+            .actividad-card:hover .actividad-icon {
+                transform: scale(1.2) rotate(15deg);
+            }
+        </style>
+
+        <h2 style="text-align: center; color: #2e7d32; font-size: 32px; margin-bottom: 50px;">Nuestras actividades</h2>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+            <div class="actividad-card">
+                <div class="actividad-icon">🌱</div>
+                <h3 style="color: #2e7d32; font-size: 22px; margin-bottom: 15px;">Siembra y cultivo</h3>
+                <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 0;">Realizamos el cultivo de
+                    diversas especies de plantas, aplicando técnicas de agricultura sostenible.</p>
+            </div>
+
+            <div class="actividad-card">
+                <div class="actividad-icon">📚</div>
+                <h3 style="color: #2e7d32; font-size: 22px; margin-bottom: 15px;">Talleres educativos</h3>
+                <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 0;">El Jardín Botánico de
+                    Bogotá y la Universidad Militar Nueva Granada han llevado a cabo el curso de Agricultura Urbana y
+                    Periurbana, fomentando la transferencia de conocimiento.</p>
+            </div>
+
+            <div class="actividad-card">
+                <div class="actividad-icon">🤝</div>
+                <h3 style="color: #2e7d32; font-size: 22px; margin-bottom: 15px;">Cosecha comunitaria</h3>
+                <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 0;">Compartimos los frutos de
+                    nuestra huerta con la comunidad, promoviendo la soberanía alimentaria, el trabajo en equipo y el
+                    bienestar colectivo.</p>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- AFILIACIONES -->
 
-    <section id="afiliaciones" style="padding: 80px 10%; text-align: center; background: #f9fbfb;">
+    <section id="afiliaciones" style="padding: 40px 10%; text-align: center; background: #f9fbfb;">
 
         <style>
-            .afiliacion-card {
-                text-decoration: none;
-                color: inherit;
-                display: block;
-                width: 280px;
-                background: white;
-                border-radius: 12px;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-                overflow: hidden;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
-
-            .afiliacion-card:hover {
-                transform: translateY(-8px);
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-            }
-
-            .afiliacion-img-container {
-                height: 180px;
-                background: #eaeff2;
+            .afiliacion-link {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                overflow: hidden;
-                padding: 20px;
-                border-bottom: 1px solid #eee;
-            }
-
-            .afiliacion-img-container img {
-                max-height: 100%;
-                max-width: 100%;
-                object-fit: contain;
+                width: 150px;
+                height: 150px;
                 transition: transform 0.3s ease;
             }
 
-            .afiliacion-card:hover .afiliacion-img-container img {
+            .afiliacion-link:hover {
                 transform: scale(1.05);
+            }
+
+            .afiliacion-link img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
         </style>
 
-        <h2 style="color: #2f6f8f; font-size: 32px; margin-bottom: 50px;">Afiliaciones</h2>
+        <h2 style="color: #2e7d32; font-size: 32px; margin-bottom: 30px;">Afiliaciones</h2>
 
         <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
 
-            <!-- Tarjeta 1 -->
-            <a href="#" target="_blank" class="afiliacion-card">
-                <div class="afiliacion-img-container">
-                    <img src="img/Logo.png" alt="Logo de Afiliado 1">
-                </div>
-                <div style="padding: 20px;">
-                    <h3 style="font-size: 20px; color: #2e7d32; margin-bottom: 10px;">Afiliado 1</h3>
-                    <p style="font-size: 15px; color: #555; margin-bottom: 0; line-height: 1.5;">Haz clic aquí para
-                        visitar la página de nuestra primera afiliación.</p>
-                </div>
+            <!-- Maya -->
+            <a href="https://www.mayatejedores.org/huertas/huerta-urbana-umngbogota/" target="_blank"
+                class="afiliacion-link">
+                <img src="img/Maya.png" alt="Maya Tejedores">
             </a>
 
-            <!-- Tarjeta 2 -->
-            <a href="#" target="_blank" class="afiliacion-card">
-                <div class="afiliacion-img-container">
-                    <img src="img/Logo.png" alt="Logo de Afiliado 2">
-                </div>
-                <div style="padding: 20px;">
-                    <h3 style="font-size: 20px; color: #2e7d32; margin-bottom: 10px;">Afiliado 2</h3>
-                    <p style="font-size: 15px; color: #555; margin-bottom: 0; line-height: 1.5;">Haz clic aquí para
-                        conocer más sobre nuestro segundo aliado.</p>
-                </div>
-            </a>
-
-            <!-- Tarjeta 3 -->
-            <a href="#" target="_blank" class="afiliacion-card">
-                <div class="afiliacion-img-container">
-                    <img src="img/Logo.png" alt="Logo de Afiliado 3">
-                </div>
-                <div style="padding: 20px;">
-                    <h3 style="font-size: 20px; color: #2e7d32; margin-bottom: 10px;">Afiliado 3</h3>
-                    <p style="font-size: 15px; color: #555; margin-bottom: 0; line-height: 1.5;">Descubre cómo
-                        colaboramos con nuestro tercer afiliado dando clic aquí.</p>
-                </div>
+            <!-- AeR -->
+            <a href="https://agroecologiaemrede.org.br/experiencia/huerta-urbana-de-patroclo-1-huerta-urbana-de-patroclo-2/"
+                target="_blank" class="afiliacion-link">
+                <img src="img/AeR.png" alt="Agroecología en Red">
             </a>
 
         </div>
@@ -225,13 +381,41 @@
 
     <!-- UBICACIÓN -->
 
-    <section id="ubicacion">
+    <section id="ubicacion" style="padding: 80px 10%; background: #fdfdfd; text-align: center;">
 
-        <h2>Dónde estamos ubicados</h2>
+        <h2 style="color: #2e7d32; font-size: 32px; margin-bottom: 40px;">Dónde estamos ubicados</h2>
 
-        <iframe src="https://www.google.com/maps?q=Universidad+Militar+Nueva+Granada+Bogota&output=embed" width="100%"
-            height="400" style="border:0;">
-        </iframe>
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <iframe src="https://www.google.com/maps?q=4.683502,-74.0424858&hl=es&z=16&output=embed" width="100%"
+                height="450"
+                style="border:0; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); margin-bottom: 30px;"
+                allowfullscreen="" loading="lazy">
+            </iframe>
+
+            <style>
+                .btn-maps {
+                    display: inline-block;
+                    padding: 14px 30px;
+                    background-color: #2e7d32;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 30px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    transition: transform 0.3s ease, background-color 0.3s ease;
+                }
+
+                .btn-maps:hover {
+                    transform: scale(1.05);
+                    background-color: #1b5e20;
+                }
+            </style>
+
+            <a href="https://www.google.com/maps/place/Universidad+Militar+Nueva+Granada/@4.683502,-74.1145836,13z/data=!4m10!1m2!2m1!1sUniversidad+Militar+Nueva+Granada!3m6!1s0x8e3f9a977b6502c9:0x502b2e1ab14b506f!8m2!3d4.683502!4d-74.0424858!15sCiFVbml2ZXJzaWRhZCBNaWxpdGFyIE51ZXZhIEdyYW5hZGEiA4gBAVojIiF1bml2ZXJzaWRhZCBtaWxpdGFyIG51ZXZhIGdyYW5hZGGSARFwdWJsaWNfdW5pdmVyc2l0eZoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VSb2VFbGZPRFIzUlJBQuABAPoBBAgAECw!16s%2Fm%2F07kjn90?entry=ttu&g_ep=EgoyMDI2MDQwNy4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" class="btn-maps">
+                📍 Abrir en Google Maps
+            </a>
+        </div>
 
     </section>
 
@@ -254,6 +438,43 @@
             <button type="submit">Enviar</button>
 
         </form>
+
+        <div class="redes-sociales" style="text-align: center; margin-top: 60px;">
+            <h3 style="color: #2e7d32; font-size: 24px; margin-bottom: 30px;">Síguenos en nuestras redes</h3>
+            <div style="display: flex; justify-content: center; gap: 40px;">
+                <a href="https://www.instagram.com/grupo_aye/" target="_blank" class="social-icon"
+                    style="transition: transform 0.3s ease; display: inline-block;" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                        style="width: 55px; height: 55px; fill: url(#instagram-gradient); filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15))">
+                        <defs>
+                            <linearGradient id="instagram-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#f09433" />
+                                <stop offset="25%" stop-color="#e6683c" />
+                                <stop offset="50%" stop-color="#dc2743" />
+                                <stop offset="75%" stop-color="#cc2366" />
+                                <stop offset="100%" stop-color="#bc1888" />
+                            </linearGradient>
+                        </defs>
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12.2 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/people/Agua-Energ%C3%ADa-Umng/pfbid0xS28a5DXuwiAway2BazVDaAUoiqEp95Xj2CXdyVz2uvJNqV1RPRHvbRCeSNvXSkfl/"
+                    target="_blank" class="social-icon" style="transition: transform 0.3s ease; display: inline-block;"
+                    aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                        style="width: 55px; height: 55px; fill: #1877F2; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15))">
+                        <path
+                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                    </svg>
+                </a>
+            </div>
+            <style>
+                .social-icon:hover {
+                    transform: scale(1.15) translateY(-5px);
+                }
+            </style>
+        </div>
 
     </section>
 
