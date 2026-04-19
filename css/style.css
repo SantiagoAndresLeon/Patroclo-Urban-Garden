@@ -453,6 +453,57 @@ footer {
   margin-top: 40px;
 }
 
+/* CABECERA DE GUARDIANES */
+
+.guardianes-page {
+  padding: 30px 5%;
+  background-image: linear-gradient(rgba(244, 246, 247, 0.7), rgba(244, 246, 247, 0.95)), url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.guardianes-title {
+  text-align: center;
+  font-size: 32px;
+  color: #2e7d32;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.guardianes-divider {
+  width: 60px;
+  height: 4px;
+  background-color: #2e7d32;
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+.descripcion-card {
+  background: white;
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  max-width: 850px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  border-top: 6px solid #2e7d32;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.descripcion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.descripcion-card p {
+  color: #444;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
 /* LISTA DE GUARDIANES */
 
 .guardianes-lista {
@@ -464,6 +515,7 @@ footer {
 }
 
 .guard {
+  position: relative;
   background: white;
   padding: 20px;
   width: 240px;
@@ -475,6 +527,82 @@ footer {
 
 .guard:hover {
   transform: translateY(-5px);
+  z-index: 10;
+}
+
+.guard .tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 105%;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  background-color: rgba(46, 125, 50, 0.98);
+  color: #fff;
+  text-align: justify;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  z-index: 100;
+  font-size: 13px;
+  line-height: 1.5;
+  transition: visibility 0.3s, opacity 0.3s ease;
+  /* Allow interaction to pause animation */
+  pointer-events: auto;
+}
+
+.guard .tooltip-slider {
+  /* It sits still when not hovered */
+  transform: translateY(0);
+}
+
+.guard:hover .tooltip-slider {
+  /* It animates only when you hover over the card/tooltip */
+  animation: scrollText 18s linear infinite;
+}
+
+@keyframes scrollText {
+  0%, 10% { transform: translateY(0); }
+  90%, 100% { transform: translateY(-60%); }
+}
+
+.guard .tooltip-text p {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.guard .tooltip-text p:last-child {
+  margin-bottom: 0;
+}
+
+.guard .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  margin-top: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent rgba(46, 125, 50, 0.98) transparent transparent;
+}
+
+.guard .tooltip-text.tooltip-left {
+  left: auto;
+  right: 105%;
+}
+
+.guard .tooltip-text.tooltip-left::after {
+  left: auto;
+  right: -16px;
+  border-color: transparent transparent transparent rgba(46, 125, 50, 0.98);
+}
+
+.guard:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 .guard .img-placeholder {
